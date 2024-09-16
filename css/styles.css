@@ -1,0 +1,133 @@
+/* Reset básico */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tema Claro (padrão) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Tema Escuro */
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+header {
+    background-color: #0038a8; /* Azul da bandeira de Israel */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#app-title {
+    margin: 0;
+}
+
+button {
+    background-color: #0056b3; /* Azul mais claro para os botões */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #003d7a; /* Azul escuro para hover */
+}
+
+main {
+    padding: 20px;
+}
+
+#lessons {
+    margin-bottom: 20px;
+}
+
+#lessons button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#lesson-container {
+    margin-bottom: 20px;
+}
+
+#quiz-container {
+    margin-top: 20px;
+}
+
+.lesson-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #0038a8; /* Azul da bandeira de Israel */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position:relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    margin-top: 10px;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Tema escuro */
+.dark-theme {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.dark-theme header {
+    background-color: #1a1a1a;
+}
+
+.dark-theme button {
+    background-color: #004080;
+}
+
+.dark-theme button:hover {
+    background-color: #003366;
+}
+
+.dark-theme .lesson-item {
+    background-color: #555;
+    border-color: #444;
+}
+
+@media (max-width: 768px) {
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

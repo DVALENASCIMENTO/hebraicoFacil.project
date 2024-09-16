@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hebraico Fácil</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="app-title">Hebraico Fácil</h1>
+        <button id="theme-toggle" onclick="toggleTheme()">Tema Claro/Escuro</button>
+
+    </header>
+
+    <main>
+        <section id="lessons">
+            <h2>Escolha uma Lição</h2>
+            <button onclick="loadLesson('alfabeto')">Alfabeto Hebraico</button>
+            <button onclick="loadLesson('frases')">Frases Comuns</button>
+            <button onclick="loadLesson('numeros')">Números</button>
+        </section>
+
+        <section id="lesson-container">
+            <h2 id="lesson-title"></h2>
+        </section>
+
+        <section id="quiz-container" style="display:none;">
+            <h2>Quiz</h2>
+            <div id="quiz"></div>
+        </section>
+    </main>
+
+    <footer>
+        <button onclick="startRecognition()">Praticar Pronúncia</button>
+
+    
+        <p>Diego Nascimento - Analista e Desenvolvedor de Sistemas</p>
+        <div class="footer-content">
+            <a href="https://www.linkedin.com/in/diego-vale-do-nascimento-48212215b/" target="_blank">LinkedIn</a>
+            <span>|</span>
+            <a href="https://github.com/DVALENASCIMENTO" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
